@@ -2,7 +2,7 @@
 defined( 'ABSPATH' ) OR exit;
 
 
-add_action( 'plugins_loaded', array( 'wp_less_updates', 'init' ), 8 );
+add_action( current_filter(), array( 'wp_less_updates', 'init' ) );
 /**
  * Updates
  * Everything that concerns updates.
